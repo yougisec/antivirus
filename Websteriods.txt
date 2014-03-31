@@ -1,0 +1,16 @@
+Websteroids injects malicious files and registry entries to your system as soon as it came, and installs malicious toolbar and add-ons to your browsers. No browsers can escape attack from this Websteroids adware, according to users’ experience. Lets’ see what Websteroids will do to your computer once infected, and why it cannot be removed by anti-virus programs:
+
+1. Websteroids is an adware program -> not as dangerous as Trojan or worms, and cannot be identified as a computer virus in essential -> anti-virus does not consider it as a computer threat;
+
+2. Websteroids hides its files deeply behind the system -> anti-virus programs cannot find those infected files;
+
+3. Websteroids installs malicious toolbar, add-ons and browser extension to your browsers -> many anti-virus programs do not deal with the browser problems.
+
+
+ Further Problems Caused by Websteroids
+
+As an adware program, Websteroids displays ads to users, or it displays fake threat alert to users such as “ the site you were about to visit may harm your computer”, disabling users from surfing the Internet normally. It also degrades target computer performance, such as slow down the system running speed.  What is worse, Websteroids is able to collect sensitive information by reviewing histories, cookies and in-put search keywords. Users’ personal information can be revealed to hackers in this way. So users are suggested to remove Websteroids from your computer as soon as you can to protect your browsers and personal info.
+
+Source
+
+http://computervirusremovalcenter.blogspot.co.uk/2013/12/what-is-websteroids-websteroids.html
