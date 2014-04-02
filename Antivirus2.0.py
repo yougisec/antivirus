@@ -76,18 +76,22 @@ def Option1():
 
                 print file
                 
+                
 def log(message):
-        with open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'wb') as f:
-                f.write(message)
-
-                log()
+        file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'r')
+        filedata = file.read()
+        file.close()
+        file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'w')
+        file.write(filedata + message)
+        file.close()
+        
         
         
         
 
 def Option2():
 
-        foldername = "C:\\Users\\Johnson\\Google Drive\\Antivirus"
+        foldername = "C:\Users\Johnson\Documents\GitHub\Antivirus"
         
         of = open(os.path.join(foldername,'Antivirus.txt'), 'r')
         virus = list(of)
@@ -99,10 +103,18 @@ def Option2():
 
 def Option3():
 
-        virus2 = raw_input("Enter the virus name: ")
-        if virus2 == 'websteriods':
+        virus2 = raw_input("Search virus signature: ")
+        if virus2 == 'search':
                 print "Loading"
-                doc = open("C:\Users\Johnson\Desktop\Antivirus\Websteriods.txt", "r")
+                print "5b1e068bf381c621008bfe0e1f0e0753b97b038b5f01fcad"
+                               
+                
+               
+               
+        
+               
+                
+                doc = open("C:\Users\Johnson\Documents\GitHub\Antivirus\Websteriods.txt", "r")
                 print doc.read()
                 
                 
@@ -129,7 +141,7 @@ def log(message):
         
         
                       
-log('yougi\n')
+log('time.strftime("%H:%M:%S"))\n')
 Getmenu()
 Option1()
 #Option2()
