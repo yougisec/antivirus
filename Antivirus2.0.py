@@ -59,11 +59,11 @@ def Option1():
         print "Scanning ......."
         
         print ""
-        virusname = 'Antivirus.py'
+        virusname = ''
 #The virus name variable
-        extension = ['txt','log','exe','mp3']
+        extension = ['sys', 'txt','exe']
 # The extensions that i want to look for  using a list function
-        journey = "C:\\Users\\Johnson\\Google Drive\\Antivirus"
+        journey = "C:\Program Files\Common Files\VMware"
 # The path directory 
         for file in os.walk(journey):
 # for loop that calls the file variable  in the journey variable.
@@ -75,38 +75,41 @@ def Option1():
                 os.path.join
 
                 print file
+        if file in os.walk(journey):
+                print "Program files"
+                
 # Once the file is found then the file will be printed.
 
                 
                 
+                
 def log(message):
 # Defining the 'log' function
-        file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'r')
+        file = open("C:\Users\Johnson\Documents\GitHub\antivirus\log.txt", 'r')
 # The file variable is equal to the 'open' variable that calls the text file) 
         filedata = file.read()
 # The variable 'filedata' calls the file variable and makes it readable
         file.close()
 # Closing the file
-        file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'w')
+        file = open("C:\Users\Johnson\Documents\GitHub\antivirus\log.txt", 'w')
 #Opening the file and enabling the write command
 # So everytime  the command runs it writes to the file.
         file.write(filedata + message)
 # The file variable calls the two argumemnts
         file.close()
         
-# The file has been closed.        
+# The file has been closed.    
         
         
 
 def Option2():
 # The option2 function is defined
 
-        foldername = "C:\Users\Johnson\Documents\GitHub\Antivirus"
+        foldername = "C:"
 # The foldername varaible has been set
         
-        of = open(os.path.join(foldername,'Antivirus.txt'), 'r')
-# The varaiable 'of' will call the path and then join the text file in  read only mode.
-        virus = list(of)
+      
+        virus = list(foldername)
 # The variable 'virus'  lists all the folders in the varable  'foldername'
         shaSums = [s.split('-')[0] for s in virus]
 # The varaible shaSums splits the array and then list the shaSum of the file or exe
@@ -140,16 +143,33 @@ def Option3():
                 #When the application is being ran then the print function will call the document in the application.
                 print doc.read()
                 
+        while True:
+                
+                quit = raw_input(" Would you like to close: ")
+                if quit == 'yes':
+                        print " Session has now terminated"
+                        break 
+
+                      
+
+                        
+
+                        if quit == 'No':
+                                print "Re-Running Processes"
+                       
+                
+                
+                
                 
 def log(message):
 # Defining the 'log' function
-        file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'r')
+        file = open("C:\Users\Johnson\Documents\GitHub\antivirus\log.txt", 'r')
 # The file variable is equal to the 'open' variable that calls the text file) 
         filedata = file.read()
 # The variable 'filedata' calls the file variable and makes it readable
         file.close()
 # Closing the file
-        file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'w')
+        file = open("C:\Users\Johnson\Documents\GitHub\antivirus\log.txt", 'w')
 #Opening the file and enabling the write command
 # So everytime  the command runs it writes to the file.
         file.write(filedata + message)
@@ -177,7 +197,7 @@ def log(message):
         
         
                       
-log('time.strftime("%H:%M:%S"))\n')
+#log('time.strftime("%H:%M:%S"))\n')
 Getmenu()
 Option1()
 #Option2()
