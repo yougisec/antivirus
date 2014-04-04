@@ -75,36 +75,58 @@ def Option1():
                 os.path.join
 
                 print file
+# Once the file is found then the file will be printed.
+
                 
                 
 def log(message):
+# Defining the 'log' function
         file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'r')
+# The file variable is equal to the 'open' variable that calls the text file) 
         filedata = file.read()
+# The variable 'filedata' calls the file variable and makes it readable
         file.close()
+# Closing the file
         file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'w')
+#Opening the file and enabling the write command
+# So everytime  the command runs it writes to the file.
         file.write(filedata + message)
+# The file variable calls the two argumemnts
         file.close()
         
-        
+# The file has been closed.        
         
         
 
 def Option2():
+# The option2 function is defined
 
         foldername = "C:\Users\Johnson\Documents\GitHub\Antivirus"
+# The foldername varaible has been set
         
         of = open(os.path.join(foldername,'Antivirus.txt'), 'r')
+# The varaiable 'of' will call the path and then join the text file in  read only mode.
         virus = list(of)
+# The variable 'virus'  lists all the folders in the varable  'foldername'
         shaSums = [s.split('-')[0] for s in virus]
+# The varaible shaSums splits the array and then list the shaSum of the file or exe
         print virus
+# Printing the list of the folder names 
         sums = raw_input
+# 
+
         print shaSums
+#Printing the Sha1 sum of  the file
 
 
 def Option3():
+# Defining the third Option 
 
         virus2 = raw_input("Search virus signature: ")
+# The variable allows the user to enter an input
         if virus2 == 'search':
+#the if statement calls th above variable and says if the user enters search
+#then the program will print "loading and also the "SHA" hash below.
                 print "Loading"
                 print "5b1e068bf381c621008bfe0e1f0e0753b97b038b5f01fcad"
                                
@@ -113,19 +135,33 @@ def Option3():
                
         
                
-                
+                #The new variable will open the library (txt) file and read from it.
                 doc = open("C:\Users\Johnson\Documents\GitHub\Antivirus\Websteriods.txt", "r")
+                #When the application is being ran then the print function will call the document in the application.
                 print doc.read()
                 
                 
 def log(message):
+# Defining the 'log' function
         file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'r')
+# The file variable is equal to the 'open' variable that calls the text file) 
         filedata = file.read()
+# The variable 'filedata' calls the file variable and makes it readable
         file.close()
+# Closing the file
         file = open("C:\Users\Johnson\Desktop\Antivirus\log.txt", 'w')
+#Opening the file and enabling the write command
+# So everytime  the command runs it writes to the file.
         file.write(filedata + message)
+# The file variable calls the two argumemnts
         file.close()
         
+# The file has been closed.
+
+"""
+        Code was created by Johnson Nwamma
+        If you would like to add to the code please do and email
+        me at j.nwamma@wcinc.info"""
         
         
       
